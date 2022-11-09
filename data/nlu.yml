@@ -1,0 +1,97 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - ola
+    - Ola, meu nome é [Guilherme](nome)
+    - Oi, meu nome é [Guilherme](nome)
+    - bom dia
+    - boa tarde
+    - tudo bem
+    - oi
+
+- intent: adeus
+  examples: |
+    - tchau
+    - ate mais
+    - ate
+    - xau
+    - foi um prazer
+
+- intent: affirm
+  examples: |
+    - sim
+    - correto
+    - ok
+
+- intent: deny
+  examples: |
+    - nao
+    - acho que nao
+    - nunca
+    - nem pensar
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - bem
+    - estou bem
+    - estou perfeito
+
+- intent: mood_unhappy
+  examples: |
+    - mal
+    - trite
+    - bem triste
+    - estou triste
+    - estou mal
+
+- intent: ask_contratacao_empresa
+  examples: |
+    - gostaria de fazer o teste de contratação para a empresa
+    - como faço a avaliação de contratação da empresa
+    - quero fazer o teste de contratação da empresa
+    - contratação da empresa
+
+- intent: ask_resposta_1
+  examples: |
+    - Gostaria de trabalhar porque acho que a empresa oferece uma forma de crescimento profissional para mim
+    - Acho uma boa empresa
+    - Uma das melhores empresas da categoria
+    - Empresa com metas definidas
+    - Empresa focada em crescimento de mercado
+    - Uma empresa que prioriza o bem estar dos funcionarios
+
+- intent: ask_resposta_2
+  examples: |
+    - Minha melhor qualidade é a facilidade em trabalhar em equipe
+    - Consigo me adpatar a mudanças muito facilmente
+    - Sou um bom lider
+    - Sou muito criativo
+    - Tenho uma boa versatilidade no ambiente de trabalho
+    - Sou muito comunicativo
+
+- intent: ask_resposta_3
+  examples: |
+    - Tenho problema com comunicação
+    - Sou pouco criativo
+    - Não trabalho bem em equipe
+    - Sou muito ansioso
+    - Procrastino muito
+
+- intent: ask_resposta_4
+  examples: |
+    - Minha meta principal é evoluir junto a empresa
+    - Evoluir com a empresa
+    - Conseguir mostrar meu trabalho a uma empresa que valoriza isso
+    - Subir na carreira profissinal
+    - Iniciar minha carreira profissional
+    - Começar a minha carreira profissional
+
+- intent: ask_resposta_5
+  examples: |
+    - Sim
+    - Não
+    - Depende da equipe

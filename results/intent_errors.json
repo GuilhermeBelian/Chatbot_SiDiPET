@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Sim",
+    "intent": "ask_resposta_5",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.4887579679489136
+    }
+  }
+]

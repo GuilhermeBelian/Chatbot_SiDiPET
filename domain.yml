@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - adeus
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_contratacao_empresa
+  - ask_resposta_1
+  - ask_resposta_2
+  - ask_resposta_3
+  - ask_resposta_4
+  - ask_resposta_5
+
+responses:
+
+  utter_finalizacao:
+  - text: "Eai gostou do formulario?"
+    buttons:
+    - title: "Sim"
+      payload: /affirm
+    - title: "Não"
+      payload: /deny
+
+  utter_greet:
+  - text: "Ei {name}! Como você está?"
+  - text: "Oi {name}, como você está?"
+
+  utter_pergunta_formulario:
+  - text: "Deseja fazer o formulario de contratação da nossa empresa?"
+    buttons:
+    - title: "Sim"
+      payload: /affirm
+    - title: "Não"
+      payload: /deny
+
+  utter_cheer_up:
+  - text: "Aqui esta algo para te ajudar:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Isso te ajudou?"
+
+  utter_happy:
+  - text: "Ótimo, continue!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "Sou um robo, feito em Rasa."
+
+  utter_contratacao:
+  - text: "Olá {name} seja bem vindo ao processo de contratação da empresa, vamos começar com as perguntas"
+
+  utter_pergunta_contratacao_1:
+  - text: "Por que você deseja trabalhar na nossa empresa?"
+
+  utter_pergunta_contratacao_2:
+  - text: "Qual sua melhor qualidade?"
+
+  utter_pergunta_contratacao_3:
+  - text: "Quais são seus maiores defeitos?"
+
+  utter_pergunta_contratacao_4:
+  - text: "Quais são seus objetivos dentro da empresa?"
+
+  utter_pergunta_contratacao_5:
+  - text: "Você trabalha bem em equipe?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

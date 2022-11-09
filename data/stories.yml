@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+
+- story: contratacao empresa 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_contratacao_empresa
+  - action: utter_pergunta_contratacao_1
+  - intent: ask_resposta_1
+  - action: utter_pergunta_contratacao_2
+  - intent: ask_resposta_2
+  - action: utter_pergunta_contratacao_3
+  - intent: ask_resposta_3
+  - action: utter_pergunta_contratacao_4
+  - intent: ask_resposta_4
+  - action: utter_pergunta_contratacao_5
+  - intent: ask_resposta_5
+  - action: utter_finalizacao
+
+- story: contratacao empresa 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_contratacao_empresa
+  - action: utter_pergunta_contratacao_1
+  - intent: ask_resposta_1
+  - action: utter_pergunta_contratacao_3
+  - intent: ask_resposta_3
+  - action: utter_pergunta_contratacao_2
+  - intent: ask_resposta_2
+  - action: utter_pergunta_contratacao_5
+  - intent: ask_resposta_5
+  - action: utter_pergunta_contratacao_4
+  - intent: ask_resposta_4
+  - action: utter_finalizacao
+
+- story: contratacao empresa 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_contratacao_empresa
+  - action: utter_pergunta_contratacao_2
+  - intent: ask_resposta_2
+  - action: utter_pergunta_contratacao_3
+  - intent: ask_resposta_3
+  - action: utter_pergunta_contratacao_4
+  - intent: ask_resposta_4
+  - action: utter_pergunta_contratacao_5
+  - intent: ask_resposta_5
+  - action: utter_pergunta_contratacao_1
+  - intent: ask_resposta_1
+  - action: utter_finalizacao
